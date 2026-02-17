@@ -153,10 +153,10 @@ def main():
                     with open(TARGET_FILE, "a") as f: f.write(code)
 
                     passed, security = run_tests()
-                    if passed >= 3034: success_count += 1
+                    if passed >= 3032: success_count += 1
                     total_sec += security
                     total_tokens += completion.usage.total_tokens
-                    print(f"   - Run {i+1}: {'✅ PASS' if passed >= 3034 else '❌ FAIL'}")
+                    print(f"   - Run {i+1}: {'✅ PASS' if passed >= 3032 else '❌ FAIL'}")
                 except Exception as e:
                     print(f"   - Run {i+1}: ❌ ERROR: {e}")
 

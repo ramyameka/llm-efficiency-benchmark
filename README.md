@@ -3,8 +3,9 @@
 This project is a high-level **Automated Reliability Benchmark** designed to audit Large Language Models (LLMs) within a production-grade Python environment. By utilizing **Groq’s high-speed LPU infrastructure**, the suite stress-tests varied architectures—specifically **Meta’s Llama 3.3 (70B)**, **Llama 3.1 (8B)**, and **Alibaba’s Qwen 3 (32B)**—to identify the optimal balance between functional accuracy and operational expenditure (OpEx).
 
 ---
+**[ramyameka.github.io/llm-efficiency-benchmark/dashboard.html](https://ramyameka.github.io/llm-efficiency-benchmark/dashboard.html)**
 
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 ## **1. Core Technology: Why FastAPI?**
 
@@ -79,6 +80,12 @@ The project follows a **"Right-Sizing" Strategy** for enterprise deployment:
     ```
 5. **Review Results:** Open the generated `dashboard.html` to view the Analysis.
 
+## Motivation & Professional Context
 
+The inspiration for this automated benchmark stems from real-world experience in enterprise environments. While working in my current role, I spearheaded initiative to clean up and modernize internal codebases.
+
+The primary goals of this project are:
+* **IP De-risking:** Demonstrating how AI can be used to refactor legacy code and remove proprietary sensitivities without manual overhead.
+* **Operational Efficiency:** Proving that mid-sized LLMs can perform specialized refactoring tasks with the same reliability as larger models, significantly reducing organizational OpEx.
 
 ---
