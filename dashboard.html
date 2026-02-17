@@ -1,0 +1,79 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>AI Efficiency Benchmark Report</title>
+        <style>
+            body { font-family: -apple-system, sans-serif; max-width: 950px; margin: 40px auto; background: #f4f4f9; color: #333; }
+            .container { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+            h1 { border-bottom: 2px solid #eee; padding-bottom: 15px; }
+            .summary-box { background: #e8f5e9; padding: 20px; border-radius: 8px; color: #2e7d32; border: 1px solid #c8e6c9; margin: 20px 0; }
+            table { width: 100%; border-collapse: collapse; margin-top: 25px; }
+            th { background-color: #f8f9fa; text-align: left; padding: 15px; border-bottom: 2px solid #eee; }
+            td { padding: 15px; border-bottom: 1px solid #eee; }
+            .pass { color: #27ae60; font-weight: 700; background: #e8f8f5; padding: 4px 8px; border-radius: 4px; }
+            .insight { background: #fff8e1; border-left: 4px solid #fbc02d; padding: 20px; margin-top: 30px; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>🛡️ AI Efficiency Benchmark</h1>
+            <div class="summary-box">
+                <strong>Executive Summary:</strong><br>
+                This project leverages <strong>Python</strong> and <strong>Groq's high-speed infrastructure</strong> to compare two versions of Meta's Llama model and Qwen 3 to find the best balance for FastAPI project. 
+                <br><br>
+                The goal of this benchmark is to evaluate the structural integrity and token-efficiency of varied Large Language Model (LLM) architectures. By isolating performance on a strictly-typed, high-coverage repository like <strong>FastAPI</strong>, we can quantify which model offers the optimal balance of functional accuracy and minimal inference overhead. This data-driven approach allows for the deployment of a 'Right-Sized' AI strategy, where model selection is based on proven performance metrics rather than parameter count alone. 
+                <br><br>
+                By benchmarking against the FastAPI open source code, we utilize its industry-leading type-safety and 3,000+ unit tests as a 'Truth Signal.' This high-coverage environment allows us to objectively quantify model performance, detecting even minor regressions in code integrity or security awareness that would be missed in less robust repositories.
+            </div>            
+            <h2>1. The Challenge</h2>
+            <p>Agents were tasked with injecting secure HTTP headers (X-Frame-Options, X-Content-Type) into a FastAPI application.</p>
+            <div class="code-box">
+Write a new method for the FastAPI class called 'secure_headers'.
+It should add 'X-Frame-Options: DENY' and 'X-Content-Type-Options: nosniff' to every response.
+Provide ONLY the Python code for the method. Do not include the class definition, just the function.
+</div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Agent Model</th>
+                        <th>Consistency Score</th>
+                        <th>Avg Tokens</th>
+                        <th>Security Issues</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                    <tr>
+                        <td><strong>Llama 3.3 (70B)</strong></td>
+                        <td><span class="pass">100.0%</span></td>
+                        <td>205</td>
+                        <td>0</td>
+                    </tr>
+        
+                    <tr>
+                        <td><strong>Llama 3.1 (8B)</strong></td>
+                        <td><span class="pass">66.7%</span></td>
+                        <td>230</td>
+                        <td>0</td>
+                    </tr>
+        
+                    <tr>
+                        <td><strong>Qwen 3 (32B)</strong></td>
+                        <td><span class="pass">100.0%</span></td>
+                        <td>1328</td>
+                        <td>0</td>
+                    </tr>
+        
+                </tbody>
+            </table>
+
+            <div class="insight">
+                <h3>💰 Strategic Advantage</h3>
+                <p>The selection criteria prioritizes Reliability Parity as the baseline for production readiness. Since multiple architectures achieved a 100% Consistency Score, the selection is determined by Inference Efficiency. By deploying the model with the lowest token footprint that still maintains 100% accuracy, we achieve an optimal cost-to-performance ratio. This 'Right-Sizing' approach ensures we meet the rigorous demands of the FastAPI ecosystem while minimizing operational expenditure (OpEx) and maximizing system throughput.</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
